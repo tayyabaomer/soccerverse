@@ -1,0 +1,113 @@
+Soccer Verse - From Whistle to Victory
+-----------------------
+Get Hooked on Football.
+Kick It to the Max.
+Football Fever: Catch It!
+Score Big, Dream Bigger.
+Go for Goal, Rock and Roll.
+Your Passion, Our Game.
+On the Field, We Shine.
+From Whistle to Victory
+
+
+-------------------------
+#HERO
+
+content left
+-subtitle
+From Whistle to Victory
+-title
+SoccerVerse
+-description
+Stay in the game with us for the latest news and live score updates, keeping you on top of all the action on and off the field
+
+image
+-world-cup-image
+-football-img   (should be animated infinity)
+
+
+#Match Schedule
+
+- Next Match (Heading)
+- 4 Boxes
+
+
+#Top Stories
+
+- Lionel Messi
+    - img
+    - content
+    Lionel Messi's 109th goal leads defending champion Argentina over Canada 2-0 and into Copa America final    (Heading)
+    Messi redirected Enzo Fernández’s shot following a poor Ismaël Koné clearance in off the face of Crépeau from 4 yards in the 51st for his first goal of the tournament. Messi has 28 goals in his last 25 matches for Argentina and 14 in Copa America play, three shy of the record. He has scored against 38 different nations.
+
+    11 August, 2024, 12:33 AM IST
+
+
+- Cristiano Ronaldo
+    - img
+    - content
+    Cristiano Ronaldo's Al-Nassr hit by major blow in bid to land Ederson from Man City as Saudi side identify new targetSummarize with AI Summarizer   (Heading)
+    Al-Nassr have been reportedly dealt a blow in their bid to land Ederson from Manchester City and the Saudi side are looking at an alternative target.
+    In light of the failed bid for Ederson, Al-Nassr are now reportedly shifting focus to Athletico Paranaense and Brazil goalkeeper Bento. 
+
+    15 August, 2024, 12:33 AM IST
+
+
+-----------------------------------------
+arrow icon long
+<i class="fa-solid fa-arrow-right-long"></i>
+
+
+------------------------------------
+Long down arrow
+<i class="fa-solid fa-arrow-down-long"></i>
+
+--------------------------------
+long up arrow
+<i class="fa-solid fa-arrow-up-long"></i>
+
+---------------------------------
+envelop
+<i class="fas fa-envelope"></i>
+
+
+------------------------------
+phone
+<i class="fas fa-phone-alt"></i>
+
+
+----------------------------
+facebook
+<i class="fab fa-facebook"></i>
+
+-----------------------------
+instagram
+<i class="fab fa-instagram-square"></i>
+
+
+--------------------------------
+linkedin
+<i class="fab fa-linkedin"></i>
+
+
+------------------------------
+Youtube
+<i class="fab fa-youtube"></i>
+
+
+-----------------------------
+search icon
+<i class="fas fa-search"></i>
+
+
+------------------
+people
+<i class="fas fa-user-alt"></i>
+
+
+
+///////////////////
+@Media Query
+For Laptop Screen Sizes
+
+@media (min-width: 1025px) and (max-width: 1440px) {}
