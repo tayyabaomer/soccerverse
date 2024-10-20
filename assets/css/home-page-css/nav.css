@@ -1,0 +1,166 @@
+@import url(./global.css);
+
+
+
+
+/* Navigation Menu
+ */
+
+
+.header-section {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.header-top-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-top-list {
+    padding: 1rem var(--section-padding);
+    background-color: var(--ocean-blue);
+}
+
+.search-bar input {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    font-size: 0.9rem;
+    color: var(--black-text);
+    width: 35rem;
+    border-radius: 3rem;
+    border: none;
+    margin-right: 1rem;
+}
+
+.search-bar input[placeholder] {
+    font-size: 0.9rem;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+#icon {
+    font-size: 1.5rem;
+    color: white;
+    padding-right: 3rem;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+#icon:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* 
+* Header Bottom
+ */
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem var(--section-padding);
+    box-shadow: 0 0 25px var(--ocean-blue-aqua);
+    background-color: white;
+}
+
+.navbar {
+    width: 50%;
+}
+
+.pages-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.logo-text:hover {
+    transform: scale(1.05);
+}
+
+.logo-text img {
+    height: 3.5rem;
+}
+
+.logo-title {
+    font-size: 3rem;
+    color: var(--ocean-blue);
+    padding-left: 0.5rem;
+}
+
+.pages-links  a {
+    color: var(--ocean-blue);
+}
+
+.pages-links li {
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.pages-links li:hover,  
+.pages-links li.active{
+    border-bottom: 1px solid var(--ocean-blue);
+}
+
+
+
+/* Media query for Nav bar */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    body {
+        font-size: 14px;
+    }
+
+    /* Header Top */
+    .search-bar input {
+        padding: 0.3rem 1rem;
+        font-size: 1rem;
+        width: 30rem;
+    }
+    #icon {
+        font-size: 1rem;
+        padding-right: 2rem;
+    }
+    
+    .header-top-list {
+        padding: 0.5rem var(--section-padding-2);
+    }
+
+
+    /* Header Bottom */
+    
+    .header-bottom {
+        padding: 0.5rem var(--section-padding-2);
+    }
+    .navbar {
+        width: 60%;
+    }
+    .logo-text img {
+        height: 3rem;
+    }
+    .logo-title {
+        font-size: 2.5rem;
+    }
+    .logo-text {
+        transition: transform 0.4s ease-in-out;
+    }
+    .logo-text:hover {
+        transform: scale(1.02);
+    }
+    
+}

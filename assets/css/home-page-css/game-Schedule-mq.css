@@ -1,0 +1,17 @@
+@import url(./global.css);
+
+
+/* @Media Query
+For Laptop Screen Sizes */
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+    #match-schedule {
+        padding-bottom: 5rem;
+    }
+
+    #timer {
+        padding-bottom: 3rem;
+    }
+
+}

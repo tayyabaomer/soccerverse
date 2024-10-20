@@ -1,0 +1,146 @@
+@import url(./global.css);
+
+
+
+
+/* 
+* footer 
+ */
+
+
+.footer-section {
+    width: 100%;
+    padding: 3rem var(--section-padding);
+    padding-bottom: 1rem;
+    z-index: 3;
+    background-color: var(--ocean-blue);
+    box-shadow: 0 0 25px var(--ocean-blue-aqua);
+    color: white;
+}
+
+.footer-section-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.pages-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-logo-text {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.footer-logo-text:hover {
+    transform: scale(1.1);
+}
+
+.footer-logo-text img {
+    height: 3rem;
+}
+
+.footer-logo-title {
+    font-size: 2rem;
+    color: white;
+    padding-left: 0.5rem;
+}
+
+.pages-links-footer  a {
+    color: white;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.4s ease;
+}
+
+.pages-links-footer li {
+    padding-bottom: 0.3rem;
+}
+
+.pages-links-footer a:hover{
+    border-bottom: 1px solid white;
+}
+
+.footer-section .copy-right {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.footer-social-links {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color: var(--white);
+
+}
+
+#footer-social-icon  {
+    height: 1.5rem;
+    width: 1.5rem;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    /* margin-right: 0.5rem; */
+}
+
+#footer-social-icon:hover {
+    transform: scale(1.1) translateY(-5px);
+}
+
+
+
+
+/* Media Query For Laptop Screen Sizes */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    body {
+        font-size: 16px;
+    }
+
+    /* 
+    * footer 
+    */
+
+    .footer-section {
+        padding: 3rem var(--section-padding-mq);
+        padding-bottom: 0.8rem;
+        margin-top: 3rem;
+    }
+
+    .footer-section-main {
+        justify-content: space-between;
+        padding-right: 3rem;
+    }
+
+    .footer-logo-text:hover {
+        transform: scale(1.02);
+    }
+
+    .footer-social-links {
+        display: flex;
+        align-items: center;
+        margin-top: 1.5rem;
+        font-size: 1rem;
+        color: var(--white);
+    }
+
+    #footer-social-icon  {
+        height: 1.9rem;
+        width: 1.9rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #footer-social-icon:hover {
+        transform: scale(1.02) translateY(-3px);
+    }
+
+
+}

@@ -1,0 +1,143 @@
+/* 
+* Top Stories
+ */
+
+.top-stories {
+    padding: var(--section-padding);
+}
+
+.top-stories-heading-btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.heading {
+    font-size: 4rem;
+    color: var(--ocean-blue);
+    text-align: left;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.s-f-btn {
+    padding: 1rem 2rem;
+    background-color: var(--green);
+    color: var(--white);
+    font-size: 1rem;
+    margin-right: 2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    box-shadow: 2px 2px 3px 1px var(--light-green);
+    transition: 0.4s ease-in;
+    cursor: pointer;
+}
+
+.s-f-btn strong {
+    padding-right: 8px;
+}
+
+.s-f-btn:hover {
+    transform: scale(1.05) translateY(-5px);
+}
+
+.top-stories-rows {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20rem;
+    text-align: left;
+    margin-top: 5rem;
+}
+
+.top-stories-img img{
+    height: 30rem;
+    width: 25rem;
+    object-fit: cover;
+}
+
+.top-stories-sub-heading {
+    color: var(--black-text);
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.top-stories-text {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--gray-text);
+    letter-spacing: .5px;
+}
+
+.top-stories-text a {
+    color: var(--ocean-blue);
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+
+.top-stories-text a:hover {
+    color: var(--gray-text);
+}
+
+.top-stories-rows .top-stories-date {
+    font-size: 0.8rem;
+    margin-top: 3rem;
+    color: var(--gray-text);
+    font-weight: 600;
+}
+
+
+
+
+
+/* Using Media Query For Making Hero Section Responsive */
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    body {
+        font-size: 16px;
+    }
+
+    /* Heading and Button */
+        
+    .top-stories {
+        padding: var(--section-padding-mq);
+    }
+
+    .heading {
+        font-size: var(--heading-size-3);
+    }
+
+    .s-f-btn {
+        padding: 0.7rem 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .s-f-btn:hover {
+        transform: scale(1.01) translateY(-3px);
+    }
+
+    .top-stories-rows {
+        gap: 4rem;
+        margin-top: 3rem;
+    }
+
+    .top-stories-sub-heading {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+
+    .top-stories-text {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .top-stories-text a {
+        font-size: 1.1rem;
+    }
+
+}

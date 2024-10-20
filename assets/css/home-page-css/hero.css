@@ -1,0 +1,232 @@
+@import url(./global.css);
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    padding: var(--section-padding);
+    /* border: 2px solid black; */
+    margin-bottom: 3rem;
+}
+
+.hero-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    /* border: 2px solid black; */
+}
+
+.hero-content .hero-subtitle {
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.hero-content .hero-title {
+    margin-top: 2rem;
+    font-size: var(--heading-size-7);
+    color: var(--ocean-blue);
+    letter-spacing: 1.5px;
+}
+
+.hero-content .hero-text {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+    padding: 0.5rem 0 0.5rem 5rem;
+    width: 50rem;
+    line-height: 1.5;
+    border-left: 2px solid var(--ocean-blue);
+}
+
+.hero-content .title-logo-img {
+    display: inline-block;
+    height: 6.5rem;
+    margin: -10px 0 -10px 5px;
+}
+
+.hero-img .img {
+    position: relative;
+    top: 2.5rem;
+    right: 7rem;
+}
+
+.hero-img .img1 {
+    height: 42rem;
+    width: 33rem;
+    object-fit: cover;
+}
+
+.img .img2-animated {
+    position: absolute;
+    top: 10rem;
+    left: 25rem;
+    height: 20rem;
+    transform: translate(-50%, -50%);
+    animation: rotating 20s infinite linear;
+}
+
+@keyframes rotating {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.hero-btn {
+    padding: 1.2rem 1.5rem;
+    width: 18rem;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    background-color: var(--ocean-blue);
+    text-align: center;
+    font-weight: 500;
+    transition: 0.4s ease-in-out;
+    box-shadow: 5px 5px 10px 2px var(--ocean-blue);
+}
+
+.hero-btn a {
+    color: var(--white);
+}
+
+.hero-btn:hover {
+    transform: scale(1.05) translateY(-5px);
+}
+
+.hero-btn span {
+    padding-right: 0.8rem;
+}
+
+
+
+
+/* 
+* Match Schedule Update Bar
+ */
+
+.match-schedule-timer {
+    margin-top: -7rem;
+    width: 100%;
+}
+
+.match-schedule .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-schedule-update {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--ocean-blue);
+    color: var(--white);
+    width: 100%;
+}
+
+
+.match-schedule-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.match-schedule-box {
+    height: 8rem;
+    width: 10rem;
+    border-left: 8px solid var(--white);
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.match-schedule-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-right: 3rem;
+    padding-left: 2rem;
+}
+
+.match-schedule-box strong {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+
+
+
+/* Using Media Query For Making Hero Section Responsive */
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    /* Styles for laptop screens */
+    body {
+        font-size: 16px;
+    }
+    .hero  {
+        padding: 5rem 3rem;
+    }
+
+    /* Adding more styles as needed */
+
+    .hero-content .hero-subtitle {
+        font-size: 1.2rem;
+        padding: 1rem 5rem;
+    }
+
+    .hero-content .hero-title {
+        margin-top: 0;
+        font-size: var(--heading-size-4);
+        padding: 1rem 5rem;
+    }
+
+    .hero-content .hero-text {
+        font-size: 1rem;
+        margin: 2rem 0 2rem 5rem;
+        padding: 0.5rem 0 0.5rem 3rem;
+    }
+
+    .hero-content .title-logo-img {
+        height: 4rem;
+        margin: -10px 0 -10px 5px;
+    }
+
+    /* World Cup image */
+    .hero-img .img {
+        position: relative;
+        top: 3rem;
+        right: 8rem;
+    }
+
+    .hero-img .img1 {
+        height: 30rem;
+        width: 28rem;
+    }
+
+    .img .img2-animated {
+        position: absolute;
+        top: 6rem;
+        left: 21rem;
+        height: 15rem;
+    }
+
+    /* Hero Btn */
+    .hero-btn {
+        padding: 1rem 1rem;
+        width: 12rem;
+        font-size: 1rem;
+        margin: 1rem 5rem;
+    }
+    .hero-btn:hover {
+        transform: scale(1.01) translateY(-3px);
+    }
+    
+
+    /* Timer */
+    .match-schedule-timer {
+        margin-top: 0;
+    }
+
+}

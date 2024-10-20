@@ -1,0 +1,191 @@
+@import url(./global.css);
+
+/* 
+* Match Schedule
+ */
+
+ .m-schedule {
+    padding: var(--section-padding);
+    color: var(--black-text);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 3rem;
+}
+
+.second-heading {
+    font-size: 1.5rem;
+    color: var(--ocean-blue);
+    margin-bottom: 5rem;
+}
+
+.m-schedule-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.m-s-container {
+    margin-top: 6rem;
+}
+
+.m-schedule-card-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    background-color: var(--ocean-blue);
+    padding: 3rem;
+    width: 80%;
+    border-radius: 0.5rem;
+}
+
+.fifa-award {
+    padding: 3rem;
+    width: 30%;
+}
+
+.fifa-award img{
+    height: 20rem;
+}
+
+.m-schedule-card {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 2px 2px 3px 1px black;
+    transition: 0.4s ease-in-out;
+}
+
+.m-schedule-card:hover {
+    transform: scale(1.03);
+}
+
+.m-schedule-heading {
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.img-content img {
+    height: 3rem;
+    width: 4rem;
+    object-fit: cover;
+}
+
+.img-content p {
+    text-align: center;
+    margin-top: 0.2rem;
+}
+
+.m-s-mini-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.m-s-mini-container span {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.m-s-imgs {
+    justify-content: space-around;
+}
+
+.m-schedule-link-other-page a:hover {
+    transform: scale(1.05) translateY(-5px);
+}
+
+.m-s-head-content {
+    margin-bottom: 2rem;
+}
+
+.m-s-bottom-content {
+    margin-top: 2rem;
+}
+
+.m-schedule-link-other-page {
+    grid-column: span 3;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.m-schedule-link-other-page a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.4s ease-in;
+}
+
+.m-schedule-link-other-page a strong {
+    padding-right: 1rem;
+}
+
+
+
+
+/* Media Query for laptop */
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    body {
+        font-size: 16px;
+    }
+
+    .m-schedule {
+        padding: var(--section-padding-mq);
+        padding-bottom: 0;
+        margin-bottom: 0;
+        font-size: 0.9rem;
+    }
+
+    .second-heading {
+        font-size: 1.5rem;
+    }
+
+    .m-s-container {
+        margin-top: 2rem;
+    }
+
+    .m-schedule-card-main {
+        padding: 2rem;
+        gap: 1.2rem;
+    }
+
+    .fifa-award img{
+        height: 20rem;
+    }
+
+    .m-schedule-card:hover {
+        transform: scale(1.02);
+    }
+
+    .img-content p {
+        margin-top: 0.1rem;
+    }
+
+    .m-s-mini-container span {
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+
+    .m-schedule-link-other-page a:hover {
+        transform: scale(1.03) translateY(-3px);
+    }
+
+    .m-s-head-content {
+        margin-bottom: 1.5rem;
+    }
+
+    .m-s-bottom-content {
+        margin-top: 1.5rem;
+    }
+
+    .m-schedule-link-other-page a{
+        font-size: 1.3rem;
+    }
+
+}

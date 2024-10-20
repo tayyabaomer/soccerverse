@@ -1,0 +1,94 @@
+@import url(./global.css);
+
+
+
+/* 
+* Top Scores
+ */
+
+.top-score {
+    padding: var(--section-padding);
+}
+
+.top-score-heading {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: var(--black-text);
+}
+
+.top-scores-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    color: var(--black-text);
+    padding-left: 15rem;
+}
+
+.top-scores-title strong {
+    margin-right: 4rem;
+}
+
+.top-scores-container {
+    background-color: var(--ocean-blue-aqua);
+    padding: 2rem;
+}
+
+.top-scores-list li {
+    background-color: var(--white);
+    box-shadow: 0 0 3px 3px var(--ocean-blue);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    transition: 0.4s ease-in;
+}
+
+.top-scores-list li:hover {
+    transform: scale(1.01) translateY(-3px);
+}
+
+.top-scores-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 3rem;
+}
+
+.top-scores-item img {
+    height: 2.5rem;
+    width: 2.5rem;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.top-scores-item p {
+    font-size: 1.2rem;
+    color: var(--gray-text);
+}
+
+
+
+/* Media Query for Laptop Screen Sizes */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    body {
+        font-size: 16px;
+    }
+
+    /* 
+    * Top Scores
+    */
+
+    .top-score {
+        padding: var(--section-padding-mq);
+    }
+
+    .top-score-heading {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .top-scores-item img {
+        border-radius: 3px;
+    }
+}

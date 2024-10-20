@@ -1,0 +1,12 @@
+@import url(./global.css);
+
+
+/* @Media Query
+For Laptop Screen Sizes */
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+    #form-mq {
+        padding-top: 5rem;
+    }
+}

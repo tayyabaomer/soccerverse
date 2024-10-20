@@ -1,0 +1,145 @@
+@import url(./global.css);
+
+
+
+/* 
+* Player Profile
+ */
+
+.player-profile-section {
+    padding: var(--section-padding);
+}
+
+.playres-profile-heading {
+    margin-bottom: 3rem;
+}
+
+.player-profile-main {
+    padding: 5rem;
+    background-color: var(--gray-aqua);
+}
+
+.player-profile-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5rem;
+}
+
+.player-profile {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.player-profile img {
+    height: 18rem;
+    width: 18rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    object-fit: cover;
+    border: 5px solid var(--ocean-blue);
+    box-shadow: 0 0 15px var(--gray-text);
+    transition: 0.3s ease-in;
+}
+
+.player-profile img:hover {
+    transform: scale(1.05);
+}
+
+.player-profile a {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--black-text);
+    transition: 0.3s ease-in;
+}
+
+.player-profile a:hover {
+    transform: translateY(-3px);
+}
+
+.other-pagelink {
+    margin-top: 5rem;
+    text-align: center;
+    transition: 0.4s ease-in-out;
+}
+
+.other-pagelink:hover  {
+    transform: scale(1.05);
+}
+
+.other-pagelink a {
+    letter-spacing: 1px;
+    font-size: 2rem;
+    color: var(--ocean-blue);
+}
+
+.other-pagelink a strong {
+    padding-right: 1rem;
+}
+
+
+
+/* Media Query For Laptop Screen Sizes */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    body {
+        font-size: 16px;
+    }
+
+    /* 
+    * Player Profile
+    */
+
+    .player-profile-section {
+        padding: var(--section-padding-mq);
+    }
+
+    .playres-profile-heading {
+        margin-bottom: 2rem;
+    }
+
+    .player-profile-main {
+        padding: 3rem;
+    }
+
+    .player-profile-container {
+        gap: 2rem;
+    }
+
+    .player-profile {
+        padding-bottom: 2rem;
+    }
+
+    .player-profile img {
+        height: 15rem;
+        width: 15rem;
+        margin-bottom: 2rem;
+    }
+
+    .player-profile img:hover {
+        transform: scale(1.02);
+    }
+
+    .player-profile a {
+        font-size: 1.3rem;
+    }
+
+    .other-pagelink {
+        margin-top: 3rem;
+    }
+
+    .other-pagelink:hover  {
+        transform: scale(1.02);
+    }
+
+    .other-pagelink a {
+        font-size: 1.6rem;
+    }
+
+    /* Cards Section */
+    .previous-match2 {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+}

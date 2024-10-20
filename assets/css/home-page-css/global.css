@@ -1,0 +1,92 @@
+/* ----------------- *\
+ - Defining Variable
+\*------------------ */
+
+:root {
+
+    /* 
+    * CSS
+    */
+
+    --main-dark-blue: #0E2D58;
+    --ocean-blue: #1D3B6B;
+    --ocean-blue-aqua: rgba(29, 59, 107, 0.8);
+    --light-sea-blue: #659BDB;
+    --gray: #C5C6C6;
+    --gray-aqua: rgba(197, 198, 198, 0.5);
+    --white: #FFFFFF;
+    --golden: #e9b965;
+    --golden-brown: #A86C28;
+    --black-text: #404040;
+    --gray-text: #707070; 
+    --green: #006F3C;
+    --light-green: #259d65;
+    --red: #BF212F;
+
+    /* 
+    * Typography
+    */
+
+    --ff-nunito-sans: "Nunito Sans", sans-serif;
+    --ff-poppins: "Poppins", sans-serif;
+
+    --heading-size-3: 3rem;
+    --heading-size-4: 4rem;
+    --heading-size-5: 5rem;
+    --heading-size-7: 7rem;
+    --heading-size-8: 8rem;
+    --heading-size-9: 9rem;
+    --heading-size-10: 10rem;
+
+
+    /* 
+    * Spacing
+     */
+
+    --section-padding: 10rem;
+    --form-section-padding: 10rem;
+
+
+    /* 
+    * Section Padding for Media Query
+     */
+    --section-padding-mq: 7rem 5rem;
+    --section-padding-2: 5rem;
+
+}
+
+
+/* ---------------------------- *\
+  #RESET DEFAULT STYLE TO CUSTOM
+\* ---------------------------- */
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+/* Display Inline to Display Block */
+
+html {
+    font-family: var(--ff-nunito-sans);
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background: var(--white);
+}
+
